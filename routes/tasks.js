@@ -5,7 +5,7 @@ const Task = require("../models/Task")
 const taskRouter = express.Router();
 
 taskRouter.get("/tasks",  (req, res) => {
-     Task.find()
+    Task.find()
     .then((tareas) => {
         res.status(200).json(tareas)
     })
